@@ -37,7 +37,7 @@ public class CustomerDataController {
     }
 
 
-    @GetMapping("CustomerDetails/{customer_id}")
+    @GetMapping("CustomerDetails/{id}")
     public String customerDetails(@PathVariable String customer_id, Model model){
         logger.trace("customerDetails() is called");
         try {
