@@ -8,8 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import teixerya.e2.model.CustomerForm;
-import teixerya.e2.service.CustomerDataService;
+import sheridan.teixerya.model.CustomerForm;
+import sheridan.teixerya.service.CustomerDataService;
+
 
 import java.util.List;
 

@@ -1,8 +1,6 @@
 package sheridan.teixerya.model;
 
 
-import com.sun.istack.NotNull;
-
 import javax.validation.constraints.*;
 import java.io.Serializable;
 
