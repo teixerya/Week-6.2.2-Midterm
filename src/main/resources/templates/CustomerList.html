@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>List All</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{css/main.css}" href="../static/css/main.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{css/footer.css}" href="../static/css/footer.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script th:src="@{js/footer.js}" src="../static/js/footer.js"></script>
+</head>
+<body>
+<main>
+    <h1>List All</h1>
+    <table th:unless="${#lists.isEmpty(customers)}">
+        <tr>
+            <th>Count</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Link "Details"</th>
+        </tr>
+        <tr th:each="s,c: ${customers}">
+            <td th:text="${c.count}">1</td>
+
+            <td th:text="${s.firstName}">Bart</td>
+            <td th:text="${s.lastName}">Simpson</td>
+            <td>
+                <a href="CustomerDetails.html" th:href="@{CustomerDetails/{customer_id}(customer_id=${s.customer_id})}">Details</a>
+
+            </td>
+        </tr>
+        <!--/*-->
+        <tr>
+            <td>2</td>
+            <td>Lisa</td>
+            <td>Simpson</td>
+            <td>
+                <a href="CustomerDetails.html">Details</a>
+
+            </td>
+        </tr>
+        <!--*/-->
+    </table>
+    <p class="message" th:if="${#lists.isEmpty(customers)}">No student data</p>
+
+
+</main>
+</body>
+</html>
