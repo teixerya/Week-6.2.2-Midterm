@@ -1,0 +1,76 @@
+/* Ryan Teixeira, Sheridan College, Ontario */
+
+main{
+    font-family: sans-serif;
+    padding-left: 1em;
+}
+
+label.group_label{
+    color: black;
+    font-size: 20px;
+}
+
+input, select{
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+a{
+    color: darkorange;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span.output{
+    font-style: italic;
+    color: deeppink;
+    margin-left: 1em;
+    font-size: 20px;
+}
+
+
+h1{
+    color: black;
+    text-shadow: 2px 2px 5px #81c784;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+table {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    padding: .5em;
+}
+
+th {
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: .5em;
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    padding: .5em;
+}
+
+.error{
+    color: darkred;
+    font-style: oblique;
+}
+
+.message{
+    font-size: larger;
+    font-weight: bolder;
+    color: #ff9800;
+}
